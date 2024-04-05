@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         ),
         mapOf(
             "age" to "22",
-            "name" to "Aalija",
+            "name" to "Aalijah",
             "message" to "Keep working hard and you can get anything that you want.",
             "image" to R.drawable.aaliyah
         ),
@@ -114,7 +114,7 @@ class MainActivity : AppCompatActivity() {
 
         // Starting values
         name.text = "Warning!!"
-        writing.text = "Welcome to the place where you age killed people..."
+        writing.text = "Welcome to the place where your age killed people..."
 
 //IntCheck
         fun intCheck(toCheck: String): Boolean {
@@ -171,21 +171,21 @@ class MainActivity : AppCompatActivity() {
                     head.text = ""
                     name.text = "$namex"
                     age.text = "Died at the age of $agex"
-                    writing.text = "Quote by $namex :'$messagex'"
+                    writing.text = "'$messagex'"
                     image.setImageResource(ages[index]["image"] as Int)
                     picture.setImageResource(ages[index]["image"] as Int)
 
                     // Assist with error checking
                     println("This is the Name : $namex")
                     println("This is the Age : $agex")
-                    println("This is the Quote : $messagex")
+                    println("$messagex")
                 } else {
                     //No age at that number
                     println("No record found")
                     age.text = ""
                     head.text = ""
                     name.text = "Sorry"
-                    writing.text = "No record found for age $answer"
+                    writing.text = "No record found for that age "
                     image.setImageResource(R.drawable.no)
                     picture.setImageResource(R.drawable.no)
                 }
@@ -201,9 +201,6 @@ class MainActivity : AppCompatActivity() {
                 image.setImageResource(R.drawable.wrongway)
                 picture.setImageResource(R.drawable.wrongway)
             }
-
         }
-
-
     }
 }
